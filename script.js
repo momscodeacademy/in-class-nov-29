@@ -1,5 +1,17 @@
 function getBooksByGenre(books, genre){
 
+    let booksByGenre = [];
+
+    for (let i=0; i < books.length; i++){
+        let currBook = books[i];
+        console.log(currBook);
+        
+        let currGenre = currBook.genre;
+        if(currGenre == genre){
+            booksByGenre.push(currBook);
+        }
+    }
+    return booksByGenre;
 }
 
 
@@ -29,3 +41,4 @@ let myBooks = [
 
 getBooksByGenre(myBooks, "non-fiction");
 getBooksByGenre(myBooks, "mystery");
+
