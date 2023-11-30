@@ -3,7 +3,7 @@
 
 To "pull" this to your local machine, run the following:
 
-```git clone```
+```git clone git@github.com:momscodeacademy/in-class-nov-29.git```
 
 Then to create and switch to a new branch, run the following:
 
