@@ -1,7 +1,20 @@
 function getBooksByGenre(books, genre){
+    //return list of books (titles) in genre
+    
+    let bookList = [];
+    
+    for (i=0; i<books.length; i++){
+        let currBookObject = books[i];
+        // console.log(currBookObject);
 
-}
+        if (currBookObject.genre == genre){
+            // console.log("genre match!");
+            bookList.push(currBookObject.title)
+        }
+    }
 
+    return (genre + ": " + bookList);    
+};
 
 let myBooks = [
     {
@@ -27,5 +40,7 @@ let myBooks = [
     
 ];
 
-getBooksByGenre(myBooks, "non-fiction");
-getBooksByGenre(myBooks, "mystery");
+let bookList1 = getBooksByGenre(myBooks, "non-fiction");
+console.log(bookList1);
+let bookList2 = getBooksByGenre(myBooks, "mystery");
+console.log(bookList2);
