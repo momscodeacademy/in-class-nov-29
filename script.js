@@ -1,4 +1,6 @@
 function getBooksByGenre(books, genre){
+    let sortedBooks = books.filter(books == genre);
+    return sortedBooks;
 
 }
 
@@ -27,5 +29,9 @@ let myBooks = [
     
 ];
 
-getBooksByGenre(myBooks, "non-fiction");
+// getBooksByGenre(myBooks, "non-fiction");
+let result = getBooksByGenre(myBooks, "non-fiction");
+console.log(result);
+
+
 getBooksByGenre(myBooks, "mystery");
